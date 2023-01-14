@@ -34,13 +34,6 @@
       "name": "Autonomous",
       "widgets": [
         {
-          "name": "Starting Position",
-          "type": "positions",
-          "file": "field.png",
-          "height": 200,
-          "colspan": 2
-        },
-        {
           "name": "Left Community",
           "type": "checkbox"
         },
@@ -48,26 +41,51 @@
           "type": "picture",
           "file": "grid.png",
           "height": 300,
-          "row": 4,
+          "row": 2,
           "col": 3,
           "rowspan": 4
         },
         {
-          "name": "Top Scored",
+          "name": "Top Scored Cones",
+          "type": "spinbox",
+          "prefix": "Auto",
+          "row": 2,
+          "col": 1
+        },
+        {
+          "name": "Top Scored Cubes",
+          "type": "spinbox",
+          "prefix": "Auto",
+          "row": 2,
+          "col": 4
+        },
+        {
+          "name": "Middle Scored Cones",
+          "type": "spinbox",
+          "prefix": "Auto",
+          "row": 3,
+          "col": 1
+        },
+        {
+          "name": "Middle Scored Cubes",
+          "type": "spinbox",
+          "prefix": "Auto",
+          "row": 3,
+          "col": 4
+        },
+        {
+          "name": "Bottom Scored Cones",
           "type": "spinbox",
           "prefix": "Auto",
           "row": 4,
           "col": 1
         },
         {
-          "name": "Middle Scored",
+          "name": "Bottom Scored Cubes",
           "type": "spinbox",
-          "prefix": "Auto"
-        },
-        {
-          "name": "Bottom Scored",
-          "type": "spinbox",
-          "prefix": "Auto"
+          "prefix": "Auto",
+          "row": 4,
+          "col": 4
         },
         {
           "type": "spacer",
@@ -81,7 +99,9 @@
             "Docked Only",
             "None"
           ],
-          "default": 2
+          "default": 2,
+          "col": 2,
+          "colspan": 2
         }
       ]
     },
@@ -92,38 +112,70 @@
           "type": "picture",
           "file": "grid.png",
           "height": 300,
+          "row": 2,
           "col": 3,
           "rowspan": 4
         },
         {
-          "name": "Top Scored",
+          "name": "Top Scored Cones",
           "type": "spinbox",
-          "row": 1,
+          "prefix": "Auto",
+          "row": 2,
           "col": 1
         },
         {
-          "name": "Middle Scored",
-          "type": "spinbox"
+          "name": "Top Scored Cubes",
+          "type": "spinbox",
+          "prefix": "Auto",
+          "row": 2,
+          "col": 4
         },
         {
-          "name": "Bottom Scored",
-          "type": "spinbox"
+          "name": "Middle Scored Cones",
+          "type": "spinbox",
+          "prefix": "Auto",
+          "row": 3,
+          "col": 1
         },
         {
-          "name": "Links (3 Game Pieces in a Horizontal Row) Scored",
-          "type": "spinbox"
+          "name": "Middle Scored Cubes",
+          "type": "spinbox",
+          "prefix": "Auto",
+          "row": 3,
+          "col": 4
         },
         {
-          "name": "Non-Linked Game Pieces",
-          "type": "spinbox"
+          "name": "Bottom Scored Cones",
+          "type": "spinbox",
+          "prefix": "Auto",
+          "row": 4,
+          "col": 1
+        },
+        {
+          "name": "Bottom Scored Cubes",
+          "type": "spinbox",
+          "prefix": "Auto",
+          "row": 4,
+          "col": 4
+        },
+        {
+          "type": "spacer",
+          "height": 80
+        },
+        {
+          "name": "Links (3 Game Pieces in a Horizontal Row) Completed",
+          "type": "spinbox",
+          "col": 1
         },
         {
           "name": "Coopertition Bonus (3 Game Pieces in Middle Grid)",
-          "type": "checkbox"
+          "type": "checkbox",
+          "col": 1
         },
         {
           "name": "Died on Field",
-          "type": "checkbox"
+          "type": "checkbox",
+          "col": 1
         },
         {
           "name": "Defense Rating",
@@ -133,6 +185,21 @@
             "Not Effective",
             "Average",
             "Very Effective"
+          ],
+          "col": 1
+        },
+        {
+          "name": "Runner Robot",
+          "type": "checkbox",
+          "col": 1
+        },
+        {
+          "name": "Pickup Locations",
+          "type": "multicheckbox",
+          "options": [
+            "Floor",
+            "Shelf",
+            "Ramp"
           ]
         }
       ]

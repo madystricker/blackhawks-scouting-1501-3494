@@ -35,8 +35,8 @@
           "name": "Where do you get game pieces?",
           "type": "multicheckbox",
           "options": [
-            "Side Wall HP Station",
-            "Driver Wall HP Station",
+            "Ramp",
+            "Shelf",
             "Floor"
           ]
         },
@@ -98,6 +98,10 @@
         },
         {
           "name": "Plays Defense",
+          "type": "checkbox"
+        },
+        {
+          "name": "Scavenger/Runner Bot",
           "type": "checkbox"
         }
       ]
