@@ -1,15 +1,38 @@
 {
-  "heading": "Charged Up - 2023",
+  "heading": "Charged Up - 2023 (Match Scouting)",
   "logo": "logo.png",
   "pages": [
     {
-      "name": "Setup+Autonomous",
+      "name":"Setup",
       "widgets": [
         {
-          "name": "Scouter Name",
-          "type": "text",
+          "name": "Scout Name",
+          "type": "dropdown",
+          "options": [
+            "Mady Stricker",
+            "Scott Thorn",
+            "Pam Bessler",
+            "Emerson Bessler",
+            "Sasha Myers",
+            "Joe Smelser",
+            "Donna Smelser",
+            "Emma Smelser",
+            "Levi Smelser",
+            "Emily Slotegraaf",
+            "Blake Hatcher",
+            "Sean Borneman"
+          ],
           "colspan": 2
         },
+        {
+          "name": "No Show",
+          "type": "checkbox"
+        }
+      ]
+    },
+    {
+      "name": "Autonomous",
+      "widgets": [
         {
           "name": "Starting Position",
           "type": "positions",
@@ -51,14 +74,14 @@
           "height": 40
         },
         {
-          "name": "Docked To Charging Station",
-          "type": "checkbox",
-          "labelColspan": 2
-        },
-        {
-          "name": "Charging Station Engaged",
-          "type": "checkbox",
-          "labelColspan": 2
+          "name": "Charging Station",
+          "type": "radio",
+          "options": [
+            "Docked+Engaged",
+            "Docked Only",
+            "None"
+          ],
+          "default": 2
         }
       ]
     },
@@ -87,11 +110,19 @@
           "type": "spinbox"
         },
         {
-          "name": "Links Scored",
+          "name": "Links (3 Game Pieces in a Horizontal Row) Scored",
           "type": "spinbox"
         },
         {
-          "name": "Co-Op Bonus",
+          "name": "Non-Linked Game Pieces",
+          "type": "spinbox"
+        },
+        {
+          "name": "Coopertition Bonus (3 Game Pieces in Middle Grid)",
+          "type": "checkbox"
+        },
+        {
+          "name": "Died on Field",
           "type": "checkbox"
         },
         {
@@ -102,8 +133,7 @@
             "Not Effective",
             "Average",
             "Very Effective"
-          ],
-          "labelColspan": 2
+          ]
         }
       ]
     },
@@ -111,7 +141,7 @@
       "name": "Endgame",
       "widgets": [
         {
-          "name": "Parking",
+          "name": "Charging Station",
           "type": "radio",
           "options": [
             "Docked+Engaged",
@@ -122,17 +152,9 @@
           "default": 3
         },
         {
-          "name": "Failed To Engage",
-          "type": "checkbox"
-        },
-        {
           "name": "Robots Docked",
           "type": "spinbox",
           "max": 3
-        },
-        {
-          "name": "Mechanical Failures",
-          "type": "text"
         },
         {
           "name": "Comments",
