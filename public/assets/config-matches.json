@@ -23,10 +23,11 @@
             "Blake Hatcher",
             "Sean Borneman"
           ],
+          "defaultOption": true,
           "validation":
           {
             "comparison": "greater",
-            "value": 0
+            "value": -1
           }
         },
         {
