@@ -51,11 +51,10 @@
         {
           "type": "picture",
           "file": "grid.png",
-          "height": 300,
+          "height": 150,
           "row": 2,
           "col": 3,
-          "rowspan": 4,
-          "colspan": 2
+          "rowspan": 3
         },
         {
           "name": "Top Cones",
@@ -70,7 +69,7 @@
           "type": "spinbox",
           "prefix": "A",
           "row": 2,
-          "col": 5,
+          "col": 4,
           "max": 3
         },
         {
@@ -86,7 +85,7 @@
           "type": "spinbox",
           "prefix": "A",
           "row": 3,
-          "col": 5,
+          "col": 4,
           "max": 3
         },
         {
@@ -102,7 +101,7 @@
           "type": "spinbox",
           "prefix": "A",
           "row": 4,
-          "col": 5,
+          "col": 4,
           "max": 5
         },
         {
@@ -118,7 +117,10 @@
             "None"
           ],
           "default": 2,
-          "col": 3
+          "col": 1,
+          "colspan": 5,
+          "align": "Center",
+          "noLabel": true
         }
       ]
     },
@@ -128,11 +130,10 @@
         {
           "type": "picture",
           "file": "grid.png",
-          "height": 300,
+          "height": 150,
           "row": 2,
           "col": 3,
-          "rowspan": 4,
-          "colspan": 2
+          "rowspan": 3
         },
         {
           "name": "Top Cones",
@@ -147,7 +148,7 @@
           "type": "spinbox",
           "prefix": "T",
           "row": 2,
-          "col": 5,
+          "col": 4,
           "max": 3
         },
         {
@@ -163,7 +164,7 @@
           "type": "spinbox",
           "prefix": "T",
           "row": 3,
-          "col": 5,
+          "col": 4,
           "max": 3
         },
         {
@@ -179,27 +180,25 @@
           "type": "spinbox",
           "prefix": "T",
           "row": 4,
-          "col": 5,
+          "col": 4,
           "max": 9
         },
         {
           "type": "spacer",
-          "height": 80
+          "height": 60
         },
         {
-          "name": "Links (3 Game Pieces in a Horizontal Row) Completed",
+          "name": "Links Completed",
           "type": "spinbox",
           "col": 1,
           "row": 6,
-          "labelColspan": 2,
           "max": 9
         },
         {
-          "name": "Coopertition Bonus (3 Game Pieces in Middle Grid)",
+          "name": "Coopertition Bonus",
           "type": "checkbox",
-          "col": 5,
-          "row": 6,
-          "labelColspan": 2
+          "col": 4,
+          "row": 6
         },
         {
           "name": "Pickup Locations",
@@ -210,22 +209,19 @@
             "Ramp"
           ],
           "col":1,
-          "row": 7,
-          "labelColspan": 2
+          "row": 7
         },
         {
           "name": "Died on Field",
           "type": "checkbox",
-          "col": 5,
-          "row": 8,
-          "labelColspan": 2
+          "col": 4,
+          "row": 8
         },
         {
           "name": "Runner Robot",
           "type": "checkbox",
-          "col": 5,
-          "row": 7,
-          "labelColspan": 2
+          "col": 4,
+          "row": 7
         },
         {
           "name": "Defense Rating",
