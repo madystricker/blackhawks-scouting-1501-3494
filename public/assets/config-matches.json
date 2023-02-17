@@ -247,7 +247,9 @@
         {
           "name": "Comments",
           "type": "textarea",
-          "col": 2,
+          "col": 1,
+          "colspan": 3,
+          "align": "Center",
           "row":11
         },
         {
