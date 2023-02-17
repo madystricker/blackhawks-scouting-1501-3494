@@ -185,20 +185,7 @@
         },
         {
           "type": "spacer",
-          "height": 60
-        },
-        {
-          "name": "Links Completed",
-          "type": "spinbox",
-          "col": 1,
-          "row": 6,
-          "max": 9
-        },
-        {
-          "name": "Coopertition Bonus",
-          "type": "checkbox",
-          "col": 4,
-          "row": 6
+          "height": 30
         },
         {
           "name": "Pickup Locations",
@@ -232,14 +219,12 @@
             "Average",
             "Very Effective"
           ],
-          "col": 1,
-          "labelColspan": 2
-        }
-      ]
-    },
-    {
-      "name": "Endgame",
-      "widgets": [
+          "col": 1
+        },
+        {
+          "type": "spacer",
+          "height": 60
+        },
         {
           "name": "Charging Station",
           "type": "radio",
@@ -249,16 +234,34 @@
             "Parked",
             "None"
           ],
-          "default": 3
+          "default": 3,
+          "row": 9
         },
         {
           "name": "Robots Docked",
           "type": "spinbox",
-          "max": 3
+          "max": 3,
+          "col": 3,
+          "row": 9
         },
         {
           "name": "Comments",
-          "type": "textarea"
+          "type": "textarea",
+          "col": 2,
+          "row":11
+        },
+        {
+          "name": "Links Completed",
+          "type": "spinbox",
+          "col": 3,
+          "row": 10,
+          "max": 9
+        },
+        {
+          "name": "Coopertition Bonus",
+          "type": "checkbox",
+          "col": 1,
+          "row": 10
         }
       ]
     }
