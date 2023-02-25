@@ -130,7 +130,7 @@
             "Docked+Engaged",
             "Docked Only"
           ],
-          "default": 2,
+          "default": 0,
           "col": 1,
           "colspan": 5,
           "align": "Center",
@@ -248,7 +248,7 @@
             "Docked Only",
             "Parked"
           ],
-          "default": 3,
+          "default": 0,
           "row": 9
         },
         {
