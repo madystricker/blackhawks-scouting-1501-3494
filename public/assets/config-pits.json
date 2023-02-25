@@ -45,8 +45,12 @@
           ]
         },
         {
-          "name": "Can Dock?",
-          "type":"checkbox"
+          "name":"Can Dock In:",
+          "type":"multicheckbox",
+          "options":[
+            "Auto",
+            "Teleop"
+          ]
         },
         {
           "name":"Can Engage In:",
