@@ -1,22 +1,52 @@
 {
-  "heading": "Charged Up - 2023",
+  "heading": "Charged Up - 2023 (Match Scouting)",
   "logo": "logo.png",
+  "forceQualifiers": true,
   "pages": [
     {
-      "name": "Setup",
+      "name":"Setup",
       "widgets": [
         {
-          "name": "Scouter Name",
-          "type": "text",
-          "validation": {
+          "name": "Scout Name",
+          "type": "dropdown",
+          "options": [
+            "Mady Stricker",
+            "Scott Thorn",
+            "Pam Bessler",
+            "Emerson Bessler",
+            "Sasha Myers",
+            "Joe Smelser",
+            "Donna Smelser",
+            "Emma Smelser",
+            "Levi Smelser",
+            "Emily Slotegraaf",
+            "Blake Hatcher",
+            "Sean Borneman",
+            "Cameron Proffitt",
+            "Carson Eckert",
+            "Doug Cannizzaro",
+            "Evan Camomile",
+            "Logan Richison",
+            "Mason Hill",
+            "Ross Cuttriss",
+            "Traevor Myers",
+            "Addie Ivey",
+            "Karsten Sladky",
+            "Missy Ivey",
+            "Ryder Sroufe",
+            "Scott Thorn",
+            "Sierra Vrska"
+          ],
+          "defaultOption": true,
+          "validation":
+          {
             "comparison": "greater",
-            "value": 0
+            "value": -1
           }
         },
         {
-          "name": "Starting Position",
-          "type": "positions",
-          "file": "field.png"
+          "name": "No Show",
+          "type": "checkbox"
         }
       ]
     },
@@ -25,80 +55,7 @@
       "widgets": [
         {
           "name": "Left Community",
-          "type": "checkbox"
-        },
-        {
-          "name": "Co-Op Nodes",
-          "type": "label",
-          "align": "center",
-          "col": 2
-        },
-        {
-          "name": "Scored Game Pieces",
-          "type": "togglegrid",
-          "prefix": "Auto",
-          "width": 9,
-          "height": 2,
-          "colors": [
-            "red",
-            "green"
-          ]
-        },
-        {
-          "name": "Hybrid Nodes",
-          "type": "togglegrid",
-          "prefix": "Auto",
-          "width": 9,
-          "height": 1,
-          "colors": [
-            "black",
-            "yellow",
-            "purple"
-          ]
-        },
-        {
-          "type": "spacer",
-          "height": 20
-        },
-        {
-          "name": "Charging Station",
-          "type": "dropdown",
-          "options": [
-            "Not Attempted",
-            "Engaged",
-            "Docked",
-            "Failed"
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Teleop",
-      "widgets": [
-        {
-          "name": "Picked Up From",
-          "type": "heading",
-          "col": 2,
-          "colspan": 2,
-          "align": "center"
-        },
-        {
-          "name": "Ground",
-          "type": "spinbox"
-        },
-        {
-          "name": "Sub 1",
-          "type": "spinbox"
-        },
-        {
-          "name": "Sub 2 Low",
-          "type": "spinbox",
-          "row": 2,
-          "col": 3
-        },
-        {
-          "name": "Sub 2 High",
-          "type": "spinbox",
+          "type": "checkbox",
           "col": 3
         },
         {
@@ -106,80 +63,221 @@
           "height": 40
         },
         {
-          "name": "Co-Op Nodes",
-          "type": "label",
-          "align": "center",
-          "col": 2,
-          "colspan": 3
+          "type": "picture",
+          "file": "grid.png",
+          "height": 150,
+          "row": 2,
+          "col": 3,
+          "rowspan": 3
         },
         {
-          "name": "Scored Game Pieces",
-          "type": "togglegrid",
-          "colspan": 3,
-          "width": 9,
-          "height": 2,
-          "colors": [
-            "red",
-            "green"
-          ]
+          "name": "Top Cones",
+          "type": "spinbox",
+          "prefix": "A",
+          "row": 2,
+          "col": 1,
+          "max": 5
         },
         {
-          "name": "Hybrid Nodes",
-          "type": "togglegrid",
-          "colspan": 3,
-          "width": 9,
-          "height": 1,
-          "colors": [
-            "black",
-            "yellow",
-            "purple"
-          ]
+          "name": "Top Cubes",
+          "type": "spinbox",
+          "prefix": "A",
+          "row": 2,
+          "col": 4,
+          "max": 3
         },
         {
-          "name": "Defense Rating",
-          "type": "dropdown",
-          "colspan": 2,
+          "name": "Middle Cones",
+          "type": "spinbox",
+          "prefix": "A",
+          "row": 3,
+          "col": 1,
+          "max": 5
+        },
+        {
+          "name": "Middle Cubes",
+          "type": "spinbox",
+          "prefix": "A",
+          "row": 3,
+          "col": 4,
+          "max": 3
+        },
+        {
+          "name": "Bottom Cones",
+          "type": "spinbox",
+          "prefix": "A",
+          "row": 4,
+          "col": 1,
+          "max": 5
+        },
+        {
+          "name": "Bottom Cubes",
+          "type": "spinbox",
+          "prefix": "A",
+          "row": 4,
+          "col": 4,
+          "max": 5
+        },
+        {
+          "type": "spacer",
+          "height": 40
+        },
+        {
+          "name": "Charging Station",
+          "type": "radio",
           "options": [
-            "0 (Not Played)",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5 (Very Effective)"
-          ]
+            "None",
+            "Docked+Engaged",
+            "Docked Only"
+          ],
+          "default": 0,
+          "col": 1,
+          "colspan": 5,
+          "align": "Center",
+          "noLabel": true
         }
       ]
     },
     {
-      "name": "Endgame",
+      "name": "TeleOp",
       "widgets": [
         {
-          "name": "Parking",
-          "type": "radio",
-          "options": [
-            "Docked+Engaged",
-            "Docked Only",
-            "Parked",
-            "None"
-          ],
-          "default": 3
+          "type": "picture",
+          "file": "grid.png",
+          "height": 150,
+          "row": 2,
+          "col": 3,
+          "rowspan": 3
         },
         {
-          "name": "Failed Charging Station",
-          "type": "checkbox"
+          "name": "Top Cones",
+          "type": "spinbox",
+          "prefix": "T",
+          "row": 2,
+          "col": 1,
+          "max": 6
+        },
+        {
+          "name": "Top Cubes",
+          "type": "spinbox",
+          "prefix": "T",
+          "row": 2,
+          "col": 4,
+          "max": 3
+        },
+        {
+          "name": "Middle Cones",
+          "type": "spinbox",
+          "prefix": "T",
+          "row": 3,
+          "col": 1,
+          "max": 6
+        },
+        {
+          "name": "Middle Cubes",
+          "type": "spinbox",
+          "prefix": "T",
+          "row": 3,
+          "col": 4,
+          "max": 3
+        },
+        {
+          "name": "Bottom Cones",
+          "type": "spinbox",
+          "prefix": "T",
+          "row": 4,
+          "col": 1,
+          "max": 9
+        },
+        {
+          "name": "Bottom Cubes",
+          "type": "spinbox",
+          "prefix": "T",
+          "row": 4,
+          "col": 4,
+          "max": 9
+        },
+        {
+          "type": "spacer",
+          "height": 30
+        },
+        {
+          "name": "Pickup Locations",
+          "type": "multicheckbox",
+          "options": [
+            "Floor",
+            "Shelf",
+            "Ramp"
+          ],
+          "col":1,
+          "row": 7
+        },
+        {
+          "name": "Died on Field",
+          "type": "checkbox",
+          "col": 4,
+          "row": 8
+        },
+        {
+          "name": "Runner Robot",
+          "type": "checkbox",
+          "col": 4,
+          "row": 7
+        },
+        {
+          "name": "Defense Rating",
+          "type": "dropdown",
+          "options": [
+            "Not Played",
+            "Not Effective",
+            "Average",
+            "Very Effective"
+          ],
+          "col": 1
+        },
+        {
+          "type": "spacer",
+          "height": 60
+        },
+        {
+          "name": "Charging Station",
+          "type": "radio",
+          "options": [
+            "None",
+            "Docked+Engaged",
+            "Docked Only",
+            "Parked"
+          ],
+          "default": 0,
+          "row": 9
         },
         {
           "name": "Robots Docked",
           "type": "spinbox",
-          "max": 3
-        },
-        {
-          "name": "Mechanical Failures",
-          "type": "text"
+          "max": 3,
+          "col": 3,
+          "row": 9
         },
         {
           "name": "Comments",
-          "type": "textarea"
+          "type": "textarea",
+          "col": 1,
+          "colspan": 3,
+          "align": "Center",
+          "row":11
+        },
+        {
+          "name": "Links Completed",
+          "type": "spinbox",
+          "col": 3,
+          "row": 10,
+          "max": 9
+        },
+        {
+          "name": "Coopertition Bonus",
+          "type": "checkbox",
+          "col": 1,
+          "row": 10
         }
       ]
     }
