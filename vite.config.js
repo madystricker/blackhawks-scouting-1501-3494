@@ -1,7 +1,9 @@
 import autoprefixer from "autoprefixer";
 import { defineConfig } from "vite";
 import { fileURLToPath, URL } from "url";
+import { liveReload } from "vite-plugin-live-reload";
 import postcssNested from "postcss-nested";
+import ReactivityTransform from "@vue-macros/reactivity-transform/vite";
 import { VitePWA } from "vite-plugin-pwa";
 import vue from "@vitejs/plugin-vue";
 
@@ -13,9 +15,8 @@ export default defineConfig({
     }
   },
   plugins: [
-    vue({
-      reactivityTransform: true
-    }),
+    ReactivityTransform(),
+    vue(),
     VitePWA({
       includeAssets: ["assets/*", "icons/*"],
       manifest: {
@@ -37,7 +38,10 @@ export default defineConfig({
           }
         ]
       }
-    })
+    }),
+    liveReload([
+      "public/"
+    ])
   ],
   resolve: {
     alias: {

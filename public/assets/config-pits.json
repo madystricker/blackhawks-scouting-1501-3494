@@ -8,11 +8,15 @@
       "widgets": [
         {
           "name": "Team Number",
-          "type": "number",
-          "validation": {
-            "comparison": "inRange",
-            "value": [40,10000]
-          }
+          "type": "number"
+        },
+        {
+          "name": "Drive Coach",
+          "type": "text"
+        },
+        {
+          "name": "Driver Names",
+          "type": "text"
         }
       ]
     },
@@ -32,85 +36,113 @@
           "type": "number"
         },
         {
+          "name": "Wheel-Bumper Distance",
+          "type": "number"
+        },
+        {
           "name": "Weight",
           "type": "number"
         },
         {
-          "name": "Where do you get game pieces?",
-          "type": "multicheckbox",
+          "name": "Drivetrain",
+          "type": "dropdown",
           "options": [
-            "Ramp",
-            "Shelf",
-            "Floor"
+            "West Coast",
+            "Swerve",
+            "Butterfly",
+            "Mecanum",
+            "Other"
           ]
         },
         {
-          "name":"Can Dock In:",
-          "type":"multicheckbox",
-          "options":[
-            "Auto",
-            "Teleop"
+          "name": "Swerve Motor Type",
+          "type": "dropdown",
+          "options": [
+            "Neo",
+            "Falcon",
+            "Cim"
           ]
         },
         {
-          "name":"Can Engage In:",
-          "type":"multicheckbox",
-          "options":[
-            "Auto",
-            "Teleop"
+          "name": "Swerve Type",
+          "type": "dropdown",
+          "options": [
+            "No swerve",
+            "L1",
+            "L2",
+            "L3",
+            "L4",
+            "Neo",
+            "Falcon",
+            "Custom"
           ]
         },
         {
-          "name": "What Game Pieces Can You Place?",
-          "type":"multicheckbox",
-          "options":[
-            "Cone",
-            "Cube"
-          ]
+          "name": "Has Driver Camera",
+          "type": "checkbox"
         }
       ]
     },
     {
-      "name": "Autonomous",
+      "name": "Match Play",
       "widgets": [
         {
-          "name": "Exit Community?",
-          "type": "checkbox"
+          "name": "Dock Time",
+          "type": "number"
         },
         {
-          "name": "Grid Locations",
+          "name": "Cycle time",
+          "type": "number"
+        },
+        {
+          "name": "Parking",
           "type": "multicheckbox",
           "options": [
-            "Top",
-            "Middle",
-            "Bottom"
+            "Parking",
+            "Docking",
+            "Engaging"
           ]
         },
         {
-          "name": "# Auto Programs",
-          "type":"spinbox"
-        }
-      ]
-    },
-    {
-      "name": "Teleop",
-      "widgets": [
-        {
-          "name": "Grid Locations",
+          "name": "Can Pick Up",
           "type": "multicheckbox",
           "options": [
-            "Top",
-            "Middle",
-            "Bottom"
+            "Cones",
+            "Tipped Cones",
+            "Cubes"
           ]
         },
         {
-          "name": "Plays Defense",
-          "type": "checkbox"
+          "name": "Can Score In",
+          "type": "multicheckbox",
+          "options": [
+            "High",
+            "Medium",
+            "Low"
+          ]
         },
         {
-          "name": "Scavenger/Runner Bot",
-          "type": "checkbox"
+          "name": "Scoring Methods",
+          "type": "multicheckbox",
+          "options": [
+            "Manual",
+            "Auto"
+          ]
+        },
+        {
+          "name": "Preferred Pickup Location",
+          "type": "dropdown",
+          "options": [
+            "Ground",
+            "Sub 1",
+            "Sub 2 Low",
+            "Sub 2 High"
+          ]
+        },
+        {
+          "name": "Comments",
+          "type": "textarea",
+          "colspan": 3
         }
       ]
     }
