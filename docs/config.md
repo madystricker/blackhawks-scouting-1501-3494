@@ -27,6 +27,13 @@ pits
 
 Notice how the `config-` and `.json` components of each file name are not included in the list.
 
+## Handling Updates
+
+When you update your copy of Black Hawks Scouting, GitHub will pull changes in the stock forms (`config-matches.json` and `config-pits.json`) into your fork. If you have your own changes in these files and don't want this to happen, you may do one of the following:
+
+- Save a copy of these files before updating, then restore them after updating
+- Define your configurations in new files (without modifying the stock configurations), and remove the stock forms from `configurations.txt` if desired
+
 ## Referencing Assets
 
 Some configuration options allow referencing an asset file, such as an image. The file must be in the `assets` directory; subdirectories under `assets` are also allowed.
@@ -205,23 +212,37 @@ The number of rows and columns the widget takes up. See [Grid Layout](grid.md) f
 
 Certain widget types may also require additional fields:
 
+#### All widgets except Picture, Spacer
+
 `name`: string
 
 The name of the widget, which displays as a label next to it and identifies it in the exported data.
 
-Required by all widgets except Picture and Spacer.
+#### Picture, Positions
 
 `file`: filepath
 
-The path of an asset file. Currently, this option is only used by Picture and Positions which expect an image file to display.
+The path of an image file to display.
 
-Required by Picture and Positions.
+#### Dropdown, Radio, Multi Checkbox
 
 `options`: array[string]
 
-Different options to present to the user in widgets with predefined selections. Depending on the widget type, the user may be able to select one or multiple options.
+The list of options to present to the user. Dropdown and Radio require exactly one selection, while Multi Checkbox allows the user to select any number of options.
 
-Required by Dropdown, Radio, and MultiCheckbox.
+#### Toggle Grid
+
+`width`: number
+
+The number of columns in the grid.
+
+`height`: number
+
+The number of rows in the grid.
+
+`colors`: array[string]
+
+The list of colors to cycle through in a grid cell when it is clicked. Any CSS color value (hex, RGB, color name) may be used for each array element.
 
 ### Type-Specific Optional Fields
 
@@ -259,7 +280,7 @@ The radius of the circle displayed on each selected point, in pixels.
 
 `selectColor`: string
 
-The color of the circle displayed on each selected point. Any CSS color value (hex, RGB, color name) may be used.
+The color of the circle displayed on each selected point. Any CSS color value may be used.
 
 #### Radio
 
