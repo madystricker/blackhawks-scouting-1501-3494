@@ -14,18 +14,29 @@
             "Adam Couch",
             "Addison Ivey",
             "Alethea Gilpin",
+            "Allen Brown",
+            "Aviv Sarraf",
+            "Ben Flood",
             "Blake Hatcher",
             "Cameron Proffitt",
             "Carson Eckert",
+            "David Chavez",
             "Donna Smelser",
             "Doug Cannizzaro",
             "Emerson Bessler",
             "Emily Slotegraaf",
             "Emma Smelser",
             "Evan Camomile",
+            "Evan Dye",
+            "Ini Olukunle",
+            "Jack Hopkins",
             "Jason Couch",
             "Jennie Proffitt",
+            "Jessica Terry",
             "Joe Smelser",
+            "June Harris",
+            "Kennan Hunter",
+            "Kloe Petr Wang",
             "Levi Smelser",
             "Logan Richison",
             "Mady Stricker",
@@ -39,7 +50,9 @@
             "Sean Borneman",
             "Sierra Vrska",
             "Todd Gilpin",
-            "Traevor Myers"
+            "Traevor Myers",
+            "Will Yi",
+            "Wyatt Kinzer"
           ],
           "defaultOption": true,
           "validation":
@@ -60,19 +73,7 @@
         {
           "name": "Left Community",
           "type": "checkbox",
-          "col": 3
-        },
-        {
-          "type": "spacer",
-          "height": 40
-        },
-        {
-          "type": "picture",
-          "file": "grid.png",
-          "height": 150,
-          "row": 2,
-          "col": 3,
-          "rowspan": 3
+          "col": 2
         },
         {
           "name": "Top Cones",
@@ -87,7 +88,7 @@
           "type": "spinbox",
           "prefix": "A",
           "row": 2,
-          "col": 4,
+          "col": 3,
           "max": 3
         },
         {
@@ -103,7 +104,7 @@
           "type": "spinbox",
           "prefix": "A",
           "row": 3,
-          "col": 4,
+          "col": 3,
           "max": 3
         },
         {
@@ -119,7 +120,7 @@
           "type": "spinbox",
           "prefix": "A",
           "row": 4,
-          "col": 4,
+          "col": 3,
           "max": 5
         },
         {
@@ -146,14 +147,6 @@
       "name": "TeleOp",
       "widgets": [
         {
-          "type": "picture",
-          "file": "grid.png",
-          "height": 150,
-          "row": 2,
-          "col": 3,
-          "rowspan": 3
-        },
-        {
           "name": "Top Cones",
           "type": "spinbox",
           "prefix": "T",
@@ -166,7 +159,7 @@
           "type": "spinbox",
           "prefix": "T",
           "row": 2,
-          "col": 4,
+          "col": 3,
           "max": 3
         },
         {
@@ -182,7 +175,7 @@
           "type": "spinbox",
           "prefix": "T",
           "row": 3,
-          "col": 4,
+          "col": 3,
           "max": 3
         },
         {
@@ -198,7 +191,7 @@
           "type": "spinbox",
           "prefix": "T",
           "row": 4,
-          "col": 4,
+          "col": 3,
           "max": 9
         },
         {
@@ -219,13 +212,13 @@
         {
           "name": "Died on Field",
           "type": "checkbox",
-          "col": 4,
+          "col": 3,
           "row": 8
         },
         {
           "name": "Runner Robot",
           "type": "checkbox",
-          "col": 4,
+          "col": 3,
           "row": 7
         },
         {
